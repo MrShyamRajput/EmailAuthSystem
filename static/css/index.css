@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+    margin-top: 100px;
+}
+
+main h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: #ff416c;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4b2b;
+}
+
+.btn.outline {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.btn.outline:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}

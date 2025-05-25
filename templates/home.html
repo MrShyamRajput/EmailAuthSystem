@@ -1,0 +1,28 @@
+{% load static %}
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Home</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <div class="container">
+        <h1>🎉 Welcome, {{ user.username }}!</h1>
+        <p class="msg">You have successfully logged in. Glad to see you back! 💪</p>
+
+        <div class="card">
+            <h2>🌟 You're doing great!</h2>
+            <p>Keep pushing forward — dreams demand hustle! 💼🔥</p>
+            <a href="/signout" class="logout-btn">Logout</a>
+        </div>
+
+        <footer>
+            Made with ❤️ by RajputGymVibes
+        </footer>
+    </div>
+    {% endif %}
+</body>
+</html>
