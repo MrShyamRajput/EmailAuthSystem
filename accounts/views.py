@@ -8,7 +8,6 @@ from django.core.mail import send_mail
 
 # Create your views here.
 def index(request):
-    User.objects.all().delete()
     return render(request,"authentication/index.html")
 
 def signup(request):
