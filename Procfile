@@ -1,1 +1,1 @@
-web: gunicorn EmailAuthSystem.wsgi
+web: gunicorn EmailAuthSystem.asgi:application
